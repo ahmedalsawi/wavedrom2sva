@@ -1,0 +1,23 @@
+
+{
+"signal": [
+  {"name": "clk", "wave": "P.......", "node":"........"},
+  {"name": "req", "wave": "01...0..", "node":".a.B.c.D"},
+  {"name": "ack", "wave": "0..1...0", "node":".A.b.C.d"}
+],
+  "edge"   : ["a-~>b 1:N",
+  				"b-~>c 2",
+                "c-~>d 2",
+
+  				"a-~>c 1:$",
+  				"b-~>d 1:$",
+
+  		  		"a-|>A",
+  				"b-|>B",
+  				"c-|>C",
+  				"d-|>D"
+
+   ],
+ "config": {"hscale":2,"scale":2}
+}
+
